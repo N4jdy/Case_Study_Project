@@ -1,15 +1,20 @@
 import streamlit as st
+from modules import gerate_verwaltung, reservierungssystem, wartung_management
 
-tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
+# Setzt das Seitenlayout
+st.set_page_config(page_title="Geräteverwaltung", layout="wide")
 
-with tab1:
-   st.header("A cat")
-   st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
+# Seiten-Navigation in der Sidebar
+st.sidebar.title("Navigation")
+page = st.sidebar.radio(
+    "Wähle eine Seite:",
+    ["Geräte-Verwaltung", "Reservierungssystem", "Wartungs-Management"]
+)
 
-with tab2:
-   st.header("A dog")
-   st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
-
-with tab3:
-   st.header("An owl")
-   st.image("https://static.streamlit.io/examples/owl.jpg", width=200)
+# Lade das entsprechende Modul basierend auf der Auswahl
+if page == "Geräte-Verwaltung":
+    gerate_verwaltung.show()
+elif page == "Reservierungssystem":
+    reservierungssystem.show()
+elif page == "Wartungs-Management":
+    wartung_management.show()
