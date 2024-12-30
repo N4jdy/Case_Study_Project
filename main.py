@@ -1,6 +1,27 @@
 import streamlit as st
 
+st.set_page_config(page_title="Geräteverwaltungssystem", page_icon="https://w7.pngwing.com/pngs/71/20/png-transparent-mci-management-center-innsbruck-university-of-innsbruck-master-s-degree-bachelor-s-degree-school.png", layout="wide")
+def add_custom_css():
+    st.markdown(
+        """
+        <style>
+        header {visibility: hidden;}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
 def main():
+   add_custom_css()
+   with st.sidebar:
+        st.image("https://prod5.assets-cdn.io/event/5509/assets/8366056178-8d14582d14.png", use_container_width=True)
+        st.markdown("---")
+        st.markdown("### Kontakt")
+        st.markdown("📧 Email: support@mci4me.at")
+        st.markdown("📞 Telefon: +43 123 456 7890")
+        
+
+   
    # Anmeldung
    if "user_logged_in" not in st.session_state:
       st.session_state["user_logged_in"] = False
@@ -135,10 +156,10 @@ def manage_devices():
    for tab, (room, devices) in zip(tabs, rooms.items()):
       with tab:
          st.subheader(room)
-         for device, description in devices:
+         for device, description, image in devices:
                col1, col2 = st.columns([1, 3])
                with col1:
-                  st.image(f"https://via.placeholder.com/150", caption=device, use_container_width=True)
+                  st.image(image, caption=device, use_container_width=True)
                with col2:
                   st.write(f"**{device}**")
                   st.write(description)
@@ -154,10 +175,10 @@ def view_devices():
     for tab, (room, devices) in zip(tabs, rooms.items()):
         with tab:
             st.subheader(room)
-            for device, description in devices:
+            for device, description, image in devices:
                 col1, col2 = st.columns([1, 3])
                 with col1:
-                    st.image(f"https://via.placeholder.com/150", caption=device, use_container_width=True)
+                    st.image(image, caption=device, use_container_width=True)
                 with col2:
                     st.write(f"**{device}**")
                     st.write(description)
@@ -169,47 +190,28 @@ def get_device_data():
     """Gerätedaten als Dictionary."""
     return {
         "Werkstatt": [
-            ("Laser-Cutter", "Für präzise Schnitte in Holz, Kunststoff oder Metall."),
-            ("3D-Drucker", "Für Prototypen und Modellbau."),
-            ("CNC-Fräsmaschinen", "Für computergesteuerte Bearbeitung von Werkstoffen."),
-            ("Schweißgeräte", "Für Metallarbeiten und Fertigung."),
-            ("Plotter", "Für großformatige Drucke und Schablonen."),
-            ("Textilpressen", "Für das Bedrucken von Textilien."),
-            ("Sägen und Bohrmaschinen", "Stationär und mobil.")
+            ("Laser-Cutter", "Für präzise Schnitte in Holz, Kunststoff oder Metall.", "https://www.gettingsmart.com/wp-content/uploads/2016/10/Laser-Cutting-Technology-Feature-Image.jpg"),
+            ("3D-Drucker", "Für Prototypen und Modellbau.", "https://www.zukunftsinstitut.de/hubfs/Imported_Blog_Media/03_Industrie4_0_flickr_Creative_Tools_3_CC-BY-SA-2_0-1.jpg"),
+            ("CNC-Fräsmaschinen", "Für computergesteuerte Bearbeitung von Werkstoffen.", "https://www.techpilot.com/wp-content/uploads/2019/06/cnc-fraesen.jpg"),
+            ("Schweißgeräte", "Für Metallarbeiten und Fertigung.", "https://www.hdb-schweiss-shop.de/images/product_images/popup_images/12167_5.jpg"),
+            ("Plotter", "Für großformatige Drucke und Schablonen.", "https://ictnetcom.ch/wp-content/uploads/2018/12/grossformat_plotter.jpg"),
+            ("Textilpressen", "Für das Bedrucken von Textilien.", "https://m.media-amazon.com/images/I/71qP8TnXPZL._AC_UF894,1000_QL80_.jpg"),
+            ("Sägen und Bohrmaschinen", "Stationär und mobil.", "https://m.media-amazon.com/images/I/61bVJHxBShL.jpg")
         ],
         "Labor": [
-            ("Mikroskope", "Licht- und Elektronenmikroskope."),
-            ("Spektrometer", "Für chemische und physikalische Analysen."),
-            ("Oszilloskope", "Für die Signalüberwachung in der Elektronik."),
-            ("3D-Scanner", "Zur Digitalisierung von Objekten."),
-            ("Pipettierroboter", "Für Laborarbeiten in der Biologie oder Chemie."),
-            ("Lötstationen", "Für Elektronikprojekte.")
+            ("Mikroskope", "Licht- und Elektronenmikroskope.","https://www.kruess.com/wp-content/uploads/2024/07/Mikroskop-Monokular-Hellfeld-Abbe-Kondensor-Kruess_MML1200.jpg"),
+            ("Spektrometer", "Für chemische und physikalische Analysen.", "https://katedry.czu.cz/storage/194/5864_DSC_9109.jpg"),
+            ("Oszilloskope", "Für die Signalüberwachung in der Elektronik.", "https://cdn-reichelt.de/bilder/web/xxl_ws/D100/RTM_3K_X4_01.png"),
+            ("3D-Scanner", "Zur Digitalisierung von Objekten.", "https://cdn.myshoptet.com/usr/www.materialpro3d.cz/user/shop/big/145754_revopoint-mini-2-3d-scanner-premium-package-mini2-advanced-edition-30237-3.png?6650b6dc"),
+            ("Pipettierroboter", "Für Laborarbeiten in der Biologie oder Chemie.", "https://www.integra-biosciences.com/sites/default/files/2018-01/assist-plus-pipetting-robot-serial-dilution.jpg"),
+            ("Lötstationen", "Für Elektronikprojekte.", "https://www.pollin.de/media/dc/7b/34/1701796676/840054-1-loetstation-zd-931.jpg")
         ],
-        "Medienstudio": [
-            ("Kameras", "Für Fotografie und Filmproduktion."),
-            ("VR/AR-Headsets", "Für interaktive Anwendungen und Simulationen."),
-            ("Drohnen", "Für Luftaufnahmen und Forschung."),
-            ("Beleuchtungstechnik", "Für Film- und Medienstudios."),
-            ("Mischpulte und Audio-Interfaces", "Für Tonproduktion.")
-        ],
-        "IT-Labor": [
-            ("Computer-Arbeitsstationen", "Mit spezialisierter Software wie CAD oder GIS."),
-            ("Server und NAS-Systeme", "Für die Verwaltung von Daten und Netzwerken."),
-            ("Render-Farmen", "Für grafikintensive Projekte wie Animation."),
-            ("Tablets und Grafik-Tablets", "Für digitale Kunst und Design."),
-            ("VR-Labs", "Vollständige Workstations für immersive Anwendungen.")
-        ],
+        
         "Technische Einrichtungen": [
-            ("Robotik-Arbeitsplätze", "Mit Roboterarmen oder mobilen Robotern."),
-            ("Windkanäle", "Für aerodynamische Untersuchungen."),
-            ("Simulationsanlagen", "Für Ingenieur- oder Verkehrsmodelle."),
-            ("Hydraulik- und Pneumatik-Systeme", "Für technische Studien.")
+            ("Robotik-Arbeitsplätze", "Mit Roboterarmen oder mobilen Robotern.", "https://lupadata.com/wp-content/uploads/2022/09/Robot_arm_1.jpg"),
+            ("Windkanäle", "Für aerodynamische Untersuchungen.", "https://wttech.cz/app/uploads/2023/09/12026_V01_03@2x.png"),
         ],
-        "Infrastruktur": [
-            ("Projektoren und Whiteboards", "Für Vorlesungen und Seminare."),
-            ("Drucker und Scanner", "Standard und großformatig."),
-            ("Smartboards und interaktive Displays", "Für modernste Präsentationen.")
-        ]
+        
     }
 
 
@@ -221,23 +223,8 @@ def handle_maintenence():
    pass
 
 
+
 if __name__ == "__main__":
     main()
 
 
-
-_ = """
-tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
-
-with tab1:
-   st.header("A cat")
-   st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
-
-with tab2:
-   st.header("A dog")
-   st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
-
-with tab3:
-   st.header("An owl")
-   st.image("https://static.streamlit.io/examples/owl.jpg", width=200)
-"""
