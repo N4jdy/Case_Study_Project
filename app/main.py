@@ -1,13 +1,14 @@
 import streamlit as st
-from utils.css import add_custom_css
-from seiten import startseite, manage_users, manage_devices, view_devices, handle_reservations, handle_maintenance
 
-
+# Set page configuration at the very beginning
 st.set_page_config(
    page_title="Geräteverwaltungssystem", 
    page_icon="https://w7.pngwing.com/pngs/71/20/png-transparent-mci-management-center-innsbruck-university-of-innsbruck-master-s-degree-bachelor-s-degree-school.png", 
    layout="wide"
-   )
+)
+
+from utils.css import add_custom_css
+from seiten import startseite, manage_users, manage_devices, view_devices, handle_reservations, handle_maintenance
 
 def main():
    add_custom_css()
@@ -18,8 +19,6 @@ def main():
         st.markdown("📧 Email: support@mci4me.at")
         st.markdown("📞 Telefon: +43 123 456 7890")
         
-
-   
    # Anmeldung
    if "user_logged_in" not in st.session_state:
       st.session_state["user_logged_in"] = False
@@ -34,7 +33,7 @@ def main():
          role = st.radio("Bitte wählen Sie Ihre Rolle:", ["Administrator", "Nutzer"])
          name = st.text_input("Name")
          email = st.text_input("Email")
-         passwort = st.text_input("Passwort")
+         passwort = st.text_input("Passwort", type="password")
          submitted = st.form_submit_button("Anmelden")
 
          if submitted:
@@ -76,7 +75,6 @@ def main():
          "Geräte-Übersicht": view_devices.display,
       }
 
-   #choice = st.sidebar.selectbox("Navigationsmenü", list(menu.keys()))
    choice = st.sidebar.radio("Navigationsmenü", list(menu.keys()))
 
    if st.session_state["role"] == "Administrator":
@@ -93,13 +91,12 @@ def main():
          st.subheader("Geräte-Verwaltung")
          manage_devices.display()
 
-      elif choice == "Reservieungssystem":
-         st.subheader("Reservieungssystem")
+      elif choice == "Reservierungssystem":
+         st.subheader("Reservierungssystem")
          handle_reservations.display()
 
-
-      elif choice == "Wartungsmanagment":
-         st.subheader("Wartungsmanagment")
+      elif choice == "Wartungsmanagement":
+         st.subheader("Wartungsmanagement")
          handle_maintenance.display()
 
    elif st.session_state["role"] == "Nutzer":
@@ -111,16 +108,6 @@ def main():
       if choice == "Geräte-Übersicht":
          st.subheader("Geräte-Übersicht")
          view_devices.display()
-   
-   class user:
-      pass
-   class device: # -> def get_device_data() als Klasse abbilden
-      pass
-
-
 
 if __name__ == "__main__":
     main()
-
-
-

@@ -1,21 +1,42 @@
 import streamlit as st
-from utils.device_data import get_device_data
+import json
+import os
 
 def display():
     """Funktion für die Geräteübersicht für Nutzer."""
-    rooms = get_device_data()
+    devices_db_file = os.path.join(os.path.dirname(__file__), 'database.json')
+    with open(devices_db_file, 'r', encoding='utf-8') as file:
+        devices_db = json.load(file)
 
-    tabs = st.tabs(list(rooms.keys()))
+  
 
-    for tab, (room, devices) in zip(tabs, rooms.items()):
+    categories = {}
+    for device_id, device_info in devices_db['devices'].items():
+        category = device_info['category']
+        if category not in categories:
+            categories[category] = []
+        categories[category].append(device_info)
+
+
+
+    tabs = st.tabs(list(categories.keys()))
+
+    for tab, (category, devices) in zip(tabs, categories.items()):
         with tab:
-            st.subheader(room)
-            for device, description, image in devices:
+            st.subheader(category)
+            for device_info in devices:
+                device_name = device_info['device_name']
+                managed_by_user_id = device_info['managed_by_user_id']
+                description = device_info['description']
+                image_url = device_info['image_url']
+                
                 col1, col2 = st.columns([1, 3])
                 with col1:
-                    st.image(image, caption=device, use_container_width=True)
+                    st.image(image_url, caption=device_name, use_container_width=True)
                 with col2:
-                    st.write(f"**{device}**")
+                    st.write(f"**{device_name}**")
                     st.write(description)
-                if st.button(f"Gerät reservieren ({device})"):
-                    st.success(f"Reservierung für {device} wurde erfolgreich eingetragen!")
+                    st.write(managed_by_user_id)
+                if st.button(f"Gerät reservieren ({device_name})"):
+                    st.success(f"Gerät {device_name} reserviert.")
+
