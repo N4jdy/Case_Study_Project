@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 from utils.css import add_custom_css
-from seiten import startseite, manage_users, manage_devices, view_devices, handle_reservations, handle_maintenance
+import startseite, manage_users, manage_devices, view_devices, handle_reservations, handle_maintenance
 
 def main():
    add_custom_css()
