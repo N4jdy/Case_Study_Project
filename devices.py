@@ -34,12 +34,26 @@ class Device():
         DeviceQuery = Query()
         result = self.db_connector.search(DeviceQuery.device_name == self.device_name)
         if result:
-            # Update the existing record with the current instance's data
-            result = self.db_connector.update(self.__dict__, doc_ids=[result[0].doc_id])
+            # Aktualisiere das Gerät in der Datenbank
+            self.db_connector.update({
+                "device_name": self.device_name,
+                "managed_by_user_id": self.managed_by_user_id,
+                "is_active": self.is_active,
+                "image_url": self.image_url,
+                "description": self.description,
+                "category": self.category
+            }, doc_ids=[result[0].doc_id])
             print("Data updated.")
         else:
-            # If the device doesn't exist, insert a new record
-            self.db_connector.insert(self.__dict__)
+            # Gerät existiert nicht, füge es hinzu
+            self.db_connector.insert({
+                "device_name": self.device_name,
+                "managed_by_user_id": self.managed_by_user_id,
+                "is_active": self.is_active,
+                "image_url": self.image_url,
+                "description": self.description,
+                "category": self.category
+            })
             print("Data inserted.")
     
     def delete(self):
@@ -48,11 +62,11 @@ class Device():
         DeviceQuery = Query()
         result = self.db_connector.search(DeviceQuery.device_name == self.device_name)
         if result:
-            # Delete the record from the database
+            # Gerät löschen
             self.db_connector.remove(doc_ids=[result[0].doc_id])
-            print("Data deleted.")
+            print(f"Device '{self.device_name}' deleted.")
         else:
-            print("Data not found.")
+            print(f"Device '{self.device_name}' not found.")
 
     def set_managed_by_user_id(self, managed_by_user_id: str):
         """Expects `managed_by_user_id` to be a valid user id that exists in the database."""
@@ -67,7 +81,7 @@ class Device():
 
         if result:
             data = result[:num_to_return]
-            device_results = [cls(d['device_name'], d['managed_by_user_id'], d['description'], d['image_url'], d['cagtegory']) for d in data]
+            device_results = [cls(d['device_name'], d['managed_by_user_id'], d['description'], d['image_url'], d['category']) for d in data]
             return device_results if num_to_return > 1 else device_results[0]
         else:
             return None

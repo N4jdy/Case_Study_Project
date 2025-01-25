@@ -37,7 +37,8 @@ def main():
          submitted = st.form_submit_button("Anmelden")
 
          if submitted:
-            if role and name and email and passwort:
+            #if role and name and email and passwort:
+            if role: #Für zugriff ohne Eingabe
                st.session_state["user_logged_in"] = True
                st.session_state["role"] = role
                st.session_state["name"] = name

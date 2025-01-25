@@ -6,7 +6,7 @@
             "managed_by_user_id": "one@mci.edu",
             "is_active": true,
             "category": "Werkstatt",
-            "description": "Für präzise Schnitte in Holz, Kunststoff oder Metall.",
+            "description": "F\u00c3\u00bcr pr\u00c3\u00a4zise Schnitte in Holz, Kunststoff oder Metall.",
             "image_url": "https://www.gettingsmart.com/wp-content/uploads/2016/10/Laser-Cutting-Technology-Feature-Image.jpg"
         },
         "2": {
@@ -15,25 +15,25 @@
             "managed_by_user_id": "two@mci.edu",
             "is_active": true,
             "category": "Werkstatt",
-            "description": "Für Prototypen und Modellbau.",
+            "description": "F\u00c3\u00bcr Prototypen und Modellbau.",
             "image_url": "https://www.zukunftsinstitut.de/hubfs/Imported_Blog_Media/03_Industrie4_0_flickr_Creative_Tools_3_CC-BY-SA-2_0-1.jpg"
         },
         "3": {
-            "device_name": "CNC-Fräsmaschinen",
+            "device_name": "CNC-Fr\u00c3\u00a4smaschinen",
             "device_id": 3,
             "managed_by_user_id": "four@mci.edu",
             "is_active": true,
             "category": "Werkstatt",
-            "description": "Für computergesteuerte Bearbeitung von Werkstoffen.",
+            "description": "F\u00c3\u00bcr computergesteuerte Bearbeitung von Werkstoffen.",
             "image_url": "https://www.techpilot.com/wp-content/uploads/2019/06/cnc-fraesen.jpg"
         },
         "4": {
-            "device_name": "Schweißgeräte",
+            "device_name": "Schwei\u00c3\u0178ger\u00c3\u00a4te",
             "device_id": 4,
             "managed_by_user_id": "two@mci.edu",
             "is_active": true,
             "category": "Werkstatt",
-            "description": "Für Metallarbeiten und Fertigung.",
+            "description": "F\u00c3\u00bcr Metallarbeiten und Fertigung.",
             "image_url": "https://www.hdb-schweiss-shop.de/images/product_images/popup_images/12167_5.jpg"
         },
         "5": {
@@ -42,7 +42,7 @@
             "managed_by_user_id": null,
             "is_active": true,
             "category": "Werkstatt",
-            "description": "Für großformatige Drucke und Schablonen.",
+            "description": "F\u00c3\u00bcr gro\u00c3\u0178formatige Drucke und Schablonen.",
             "image_url": "https://ictnetcom.ch/wp-content/uploads/2018/12/grossformat_plotter.jpg"
         },
         "6": {
@@ -51,16 +51,16 @@
             "managed_by_user_id": "two@mci.edu",
             "is_active": true,
             "category": "Werkstatt",
-            "description": "Für das Bedrucken von Textilien.",
+            "description": "F\u00c3\u00bcr das Bedrucken von Textilien.",
             "image_url": "https://m.media-amazon.com/images/I/71qP8TnXPZL._AC_UF894,1000_QL80_.jpg"
         },
         "7": {
-            "device_name": "Sägen und Bohrmaschinen",
+            "device_name": "S\u00c3\u00a4gen und Bohrmaschinen",
             "device_id": 7,
             "managed_by_user_id": null,
             "is_active": true,
             "category": "Werkstatt",
-            "description": "Stationär und mobil.",
+            "description": "Station\u00c3\u00a4r und mobil.",
             "image_url": "https://m.media-amazon.com/images/I/61bVJHxBShL.jpg"
         },
         "8": {
@@ -78,7 +78,7 @@
             "managed_by_user_id": "four@mci.edu",
             "is_active": true,
             "category": "Labor",
-            "description": "Für chemische und physikalische Analysen.",
+            "description": "F\u00c3\u00bcr chemische und physikalische Analysen.",
             "image_url": "https://katedry.czu.cz/storage/194/5864_DSC_9109.jpg"
         },
         "10": {
@@ -87,7 +87,7 @@
             "managed_by_user_id": "two@mci.edu",
             "is_active": true,
             "category": "Labor",
-            "description": "Für die Signalüberwachung in der Elektronik.",
+            "description": "F\u00c3\u00bcr die Signal\u00c3\u00bcberwachung in der Elektronik.",
             "image_url": "https://cdn-reichelt.de/bilder/web/xxl_ws/D100/RTM_3K_X4_01.png"
         },
         "11": {
@@ -105,34 +105,34 @@
             "managed_by_user_id": "two@mci.edu",
             "is_active": true,
             "category": "Labor",
-            "description": "Für Laborarbeiten in der Biologie oder Chemie.",
+            "description": "F\u00c3\u00bcr Laborarbeiten in der Biologie oder Chemie.",
             "image_url": "https://www.integra-biosciences.com/sites/default/files/2018-01/assist-plus-pipetting-robot-serial-dilution.jpg"
         },
         "13": {
-            "device_name": "Lötstationen",
+            "device_name": "L\u00c3\u00b6tstationen",
             "device_id": 13,
             "managed_by_user_id": "one@mci.edu",
             "is_active": true,
             "category": "Labor",
-            "description": "Für Elektronikprojekte.",
+            "description": "F\u00c3\u00bcr Elektronikprojekte.",
             "image_url": "https://www.pollin.de/media/dc/7b/34/1701796676/840054-1-loetstation-zd-931.jpg"
         },
         "14": {
-            "device_name": "Robotik-Arbeitsplätze",
+            "device_name": "Robotik-Arbeitspl\u00c3\u00a4tze",
             "device_id": 14,
             "managed_by_user_id": "four@mci.edu",
             "is_active": true,
             "category": "Technische Einrichtungen",
-            "description": "Mit Roboterarmen oder mobilen Robotern.",
+            "description": "Mit Roboterarmen oder mobilen Robotern.\n",
             "image_url": "https://lupadata.com/wp-content/uploads/2022/09/Robot_arm_1.jpg"
         },
         "15": {
-            "device_name": "Windkanäle",
+            "device_name": "Windkan\u00c3\u00a4le",
             "device_id": 15,
             "managed_by_user_id": "one@mci.edu",
             "is_active": true,
             "category": "Technische Einrichtungen",
-            "description": "Für aerodynamische Untersuchungen.",
+            "description": "F\u00c3\u00bcr aerodynamische Untersuchungen.",
             "image_url": "https://wttech.cz/app/uploads/2023/09/12026_V01_03@2x.png"
         }
     },
@@ -143,7 +143,7 @@
             "managed_by_user_id": "one@mci.edu",
             "is_active": true,
             "category": "Werkstatt",
-            "description": "Für präzise Schnitte in Holz, Kunststoff oder Metall.",
+            "description": "F\u00c3\u00bcr pr\u00c3\u00a4zise Schnitte in Holz, Kunststoff oder Metall.",
             "image_url": "https://www.gettingsmart.com/wp-content/uploads/2016/10/Laser-Cutting-Technology-Feature-Image.jpg",
             "reservation": {
                 "name": "res1",
