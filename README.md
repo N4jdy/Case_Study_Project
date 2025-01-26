@@ -1,7 +1,7 @@
 # Case_Study_Project
 
 Befehl zum Aufrufen der App: 
-    streamlit run main.py
+    streamlit run app/main.py
 
 Case_Study_1 Abgabe 1: 2.1.2025
 
