@@ -3,7 +3,7 @@ from tinydb import TinyDB, Query
 from serializer import serializer
 
 class User:
-    db = TinyDB(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'database.json'), storage=serializer)
+    db = TinyDB(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'database.json'), storage=serializer, encoding='utf-8', ensure_ascii=False)
     db_connector = db.table('user')
 
     def __init__(self, id, username, email, role, password) -> None:

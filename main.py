@@ -59,7 +59,7 @@ def main():
    if not st.session_state["user_logged_in"]:
       st.stop()
 
-   st.title("Geräteverwaltungssystem")
+
 
    # Seitenoptionen abhängig von der Rolle
    if st.session_state["role"] == "Administrator":
@@ -102,8 +102,6 @@ def main():
 
    elif st.session_state["role"] == "Nutzer":
       if choice == "Startseite":
-         st.subheader("Willkommen zum Geräteverwaltungssystem")
-         st.write("Reservieren sie die Geräte auf einfache Weise.")
          startseite.display()
 
       if choice == "Geräte-Übersicht":
