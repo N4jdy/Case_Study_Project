@@ -93,23 +93,3 @@ class Device():
         for device_data in Device.db_connector.all():
             devices.append(Device(device_data['device_name'], device_data['managed_by_user_id'], device_data['description'], device_data['image_url'], device_data['category']))
         return devices
-
-
-
-    
-
-if __name__ == "__main__":
-
-    #loaded_device = Device.find_by_attribute("device_name", "Device2")
-    loaded_device = Device.find_by_attribute("managed_by_user_id", "two@mci.edu")
-    if loaded_device:
-        print(f"Loaded Device: {loaded_device}")
-    else:
-        print("Device not found.")
-
-    devices = Device.find_all()
-    print("All devices:")
-    for device in devices:
-        print(device)
-
-    
