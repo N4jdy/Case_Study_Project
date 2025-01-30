@@ -1,1 +1,280 @@
-{"devices": {"1": {"device_name": "Laser-Cutter", "device_id": 1, "managed_by_user_id": "one@mci.edu", "is_active": true, "category": "Werkstatt", "description": "Für präzise Schnitte in Holz, Kunststoff oder Metall.", "image_url": "https://www.gettingsmart.com/wp-content/uploads/2016/10/Laser-Cutting-Technology-Feature-Image.jpg"}, "2": {"device_name": "3D-Drucker", "device_id": 2, "managed_by_user_id": "two@mci.edu", "is_active": true, "category": "Werkstatt", "description": "Für Prototypen und Modellbau.", "image_url": "https://www.zukunftsinstitut.de/hubfs/Imported_Blog_Media/03_Industrie4_0_flickr_Creative_Tools_3_CC-BY-SA-2_0-1.jpg"}, "3": {"device_name": "CNC-Fräsmaschinen", "device_id": 3, "managed_by_user_id": "four@mci.edu", "is_active": true, "category": "Werkstatt", "description": "Für computergesteuerte Bearbeitung von Werkstoffen.", "image_url": "https://www.techpilot.com/wp-content/uploads/2019/06/cnc-fraesen.jpg"}, "4": {"device_name": "Schweißgeräte", "device_id": 4, "managed_by_user_id": "two@mci.edu", "is_active": true, "category": "Werkstatt", "description": "Für Metallarbeiten und Fertigung.", "image_url": "https://www.hdb-schweiss-shop.de/images/product_images/popup_images/12167_5.jpg"}, "5": {"device_name": "Plotter", "device_id": 5, "managed_by_user_id": null, "is_active": true, "category": "Werkstatt", "description": "Für großformatige Drucke und Schablonen.", "image_url": "https://ictnetcom.ch/wp-content/uploads/2018/12/grossformat_plotter.jpg"}, "6": {"device_name": "Textilpressen", "device_id": 6, "managed_by_user_id": "two@mci.edu", "is_active": true, "category": "Werkstatt", "description": "Für das Bedrucken von Textilien.", "image_url": "https://m.media-amazon.com/images/I/71qP8TnXPZL._AC_UF894,1000_QL80_.jpg"}, "7": {"device_name": "Bohrmaschinen", "device_id": 7, "managed_by_user_id": null, "is_active": true, "category": "Werkstatt", "description": "Stationär und mobil.", "image_url": "https://m.media-amazon.com/images/I/61bVJHxBShL.jpg"}, "8": {"device_name": "Mikroskope", "device_id": 8, "managed_by_user_id": "two@mci.edu", "is_active": true, "category": "Labor", "description": "Licht- und Elektronenmikroskope.", "image_url": "https://www.kruess.com/wp-content/uploads/2024/07/Mikroskop-Monokular-Hellfeld-Abbe-Kondensor-Kruess_MML1200.jpg"}, "9": {"device_name": "Spektrometer", "device_id": 9, "managed_by_user_id": "four@mci.edu", "is_active": true, "category": "Labor", "description": "Für chemische und physikalische Analysen.", "image_url": "https://katedry.czu.cz/storage/194/5864_DSC_9109.jpg"}, "10": {"device_name": "Oszilloskope", "device_id": 10, "managed_by_user_id": "two@mci.edu", "is_active": true, "category": "Labor", "description": "Für die Signalüberwachung in der Elektronik.", "image_url": "https://cdn-reichelt.de/bilder/web/xxl_ws/D100/RTM_3K_X4_01.png"}, "11": {"device_name": "3D-Scanner", "device_id": 11, "managed_by_user_id": "four@mci.edu", "is_active": true, "category": "Labor", "description": "Zur Digitalisierung von Objekten.", "image_url": "https://cdn.myshoptet.com/usr/www.materialpro3d.cz/user/shop/big/145754_revopoint-mini-2-3d-scanner-premium-package-mini2-advanced-edition-30237-3.png?6650b6dc"}, "12": {"device_name": "Pipettierroboter", "device_id": 12, "managed_by_user_id": "two@mci.edu", "is_active": true, "category": "Labor", "description": "Für Laborarbeiten in der Biologie oder Chemie.", "image_url": "https://www.integra-biosciences.com/sites/default/files/2018-01/assist-plus-pipetting-robot-serial-dilution.jpg"}, "13": {"device_name": "Lötstationen", "device_id": 13, "managed_by_user_id": "one@mci.edu", "is_active": true, "category": "Labor", "description": "Für Elektronikprojekte.", "image_url": "https://www.pollin.de/media/dc/7b/34/1701796676/840054-1-loetstation-zd-931.jpg"}, "14": {"device_name": "Robotik-Arbeitsplätze", "device_id": 14, "managed_by_user_id": "four@mci.edu", "is_active": true, "category": "Technische Einrichtungen", "description": "Mit Roboterarmen oder mobilen Robotern.\n", "image_url": "https://lupadata.com/wp-content/uploads/2022/09/Robot_arm_1.jpg"}, "15": {"device_name": "Windkanäle", "device_id": 15, "managed_by_user_id": "one@mci.edu", "is_active": true, "category": "Technische Einrichtungen", "description": "Für aerodynamische Untersuchungen.", "image_url": "https://wttech.cz/app/uploads/2023/09/12026_V01_03@2x.png"}}, "devices_with_subclass": {"1": {"device_name": "Laser-Cutter", "device_id": 1, "managed_by_user_id": "one@mci.edu", "is_active": true, "category": "Werkstatt", "description": "Für präzise Schnitte in Holz, Kunststoff oder Metall.", "image_url": "https://www.gettingsmart.com/wp-content/uploads/2016/10/Laser-Cutting-Technology-Feature-Image.jpg", "reservation": {"name": "res1", "start_date": "{TinyDateTime}:2021-01-01T00:00:00", "end_date": "{TinyDateTime}:2021-01-02T00:00:00"}}}, "user": {"1": {"username": "Max Mustermann", "email": "one@mci.at", "id": 1, "role": "user", "password": "mci"}, "2": {"username": "d", "id": 2, "email": "d", "role": "Nutzer", "password": "d"}, "3": {"username": "Jan Naidr", "id": 3, "email": "two@mci.edu", "role": "Nutzer", "password": "AHoj"}}, "user_with_subclass": {"1": {"username": "Max Mustermann", "email": "one@mci.at", "id": 1, "role": "user", "password": "mci"}}, "reservations": {"1": {"device_id": "Laser-Cutter", "name": "", "start_date": "29.01.2025", "end_date": "31.01.2025"}, "2": {"device_id": "Plotter", "name": "", "start_date": "12.02.2025", "end_date": "19.02.2025"}, "3": {"device_id": "Laser-Cutter", "start_date": "06.02.2025", "end_date": "08.02.2025"}}, "maintenance": {"2": {"device_id": "3D-Drucker", "next_maintenance_date": "29.04.2025"}, "5": {"device_id": "Plotter", "next_maintenance_date": "29.04.2025"}, "6": {"device_id": "Textilpressen", "next_maintenance_date": "29.04.2025"}, "7": {"device_id": "Bohrmaschinen", "next_maintenance_date": "29.04.2025"}, "8": {"device_id": "Mikroskope", "next_maintenance_date": "29.04.2025"}, "9": {"device_id": "Spektrometer", "next_maintenance_date": "29.04.2025"}, "10": {"device_id": "Oszilloskope", "next_maintenance_date": "29.04.2025"}, "11": {"device_id": "3D-Scanner", "next_maintenance_date": "29.04.2025"}, "12": {"device_id": "Pipettierroboter", "next_maintenance_date": "29.04.2025"}, "13": {"device_id": "Lötstationen", "next_maintenance_date": "29.04.2025"}, "14": {"device_id": "Robotik-Arbeitsplätze", "next_maintenance_date": "29.04.2025"}, "15": {"device_id": "Windkanäle", "next_maintenance_date": "29.04.2025"}, "16": {"device_id": "Laser-Cutter", "quarter": "Q1", "year": 2025, "cost": 400.0, "next_maintenance_date": "03.04.2025"}, "20": {"device_id": "Schweißgeräte", "quarter": "Q1", "year": 2025, "cost": 300.0, "next_maintenance_date": "30.04.2025"}, "21": {"device_id": "CNC-Fräsmaschinen", "next_maintenance_date": "30.04.2025"}, "22": {"device_id": "Laser-Cutter", "quarter": "Q2", "year": 2025, "cost": 3.0}}}
+{
+    "devices": {
+        "1": {
+            "device_name": "Laser-Cutter",
+            "device_id": 1,
+            "managed_by_user_id": "one@mci.edu",
+            "is_active": true,
+            "category": "Werkstatt",
+            "description": "Für präzise Schnitte in Holz, Kunststoff oder Metall.",
+            "image_url": "https://www.gettingsmart.com/wp-content/uploads/2016/10/Laser-Cutting-Technology-Feature-Image.jpg"
+        },
+        "2": {
+            "device_name": "3D-Drucker",
+            "device_id": 2,
+            "managed_by_user_id": "two@mci.edu",
+            "is_active": true,
+            "category": "Werkstatt",
+            "description": "Für Prototypen und Modellbau.",
+            "image_url": "https://www.zukunftsinstitut.de/hubfs/Imported_Blog_Media/03_Industrie4_0_flickr_Creative_Tools_3_CC-BY-SA-2_0-1.jpg"
+        },
+        "3": {
+            "device_name": "CNC-Fräsmaschinen",
+            "device_id": 3,
+            "managed_by_user_id": "four@mci.edu",
+            "is_active": true,
+            "category": "Werkstatt",
+            "description": "Für computergesteuerte Bearbeitung von Werkstoffen.",
+            "image_url": "https://www.techpilot.com/wp-content/uploads/2019/06/cnc-fraesen.jpg"
+        },
+        "4": {
+            "device_name": "Schweißgeräte",
+            "device_id": 4,
+            "managed_by_user_id": "two@mci.edu",
+            "is_active": true,
+            "category": "Werkstatt",
+            "description": "Für Metallarbeiten und Fertigung.",
+            "image_url": "https://www.hdb-schweiss-shop.de/images/product_images/popup_images/12167_5.jpg"
+        },
+        "5": {
+            "device_name": "Plotter",
+            "device_id": 5,
+            "managed_by_user_id": null,
+            "is_active": true,
+            "category": "Werkstatt",
+            "description": "Für großformatige Drucke und Schablonen.",
+            "image_url": "https://ictnetcom.ch/wp-content/uploads/2018/12/grossformat_plotter.jpg"
+        },
+        "6": {
+            "device_name": "Textilpressen",
+            "device_id": 6,
+            "managed_by_user_id": "two@mci.edu",
+            "is_active": true,
+            "category": "Werkstatt",
+            "description": "Für das Bedrucken von Textilien.",
+            "image_url": "https://m.media-amazon.com/images/I/71qP8TnXPZL._AC_UF894,1000_QL80_.jpg"
+        },
+        "7": {
+            "device_name": "Bohrmaschinen",
+            "device_id": 7,
+            "managed_by_user_id": null,
+            "is_active": true,
+            "category": "Werkstatt",
+            "description": "Stationär und mobil.",
+            "image_url": "https://m.media-amazon.com/images/I/61bVJHxBShL.jpg"
+        },
+        "8": {
+            "device_name": "Mikroskope",
+            "device_id": 8,
+            "managed_by_user_id": "two@mci.edu",
+            "is_active": true,
+            "category": "Labor",
+            "description": "Licht- und Elektronenmikroskope.",
+            "image_url": "https://www.kruess.com/wp-content/uploads/2024/07/Mikroskop-Monokular-Hellfeld-Abbe-Kondensor-Kruess_MML1200.jpg"
+        },
+        "9": {
+            "device_name": "Spektrometer",
+            "device_id": 9,
+            "managed_by_user_id": "four@mci.edu",
+            "is_active": true,
+            "category": "Labor",
+            "description": "Für chemische und physikalische Analysen.",
+            "image_url": "https://katedry.czu.cz/storage/194/5864_DSC_9109.jpg"
+        },
+        "10": {
+            "device_name": "Oszilloskope",
+            "device_id": 10,
+            "managed_by_user_id": "two@mci.edu",
+            "is_active": true,
+            "category": "Labor",
+            "description": "Für die Signalüberwachung in der Elektronik.",
+            "image_url": "https://cdn-reichelt.de/bilder/web/xxl_ws/D100/RTM_3K_X4_01.png"
+        },
+        "11": {
+            "device_name": "3D-Scanner",
+            "device_id": 11,
+            "managed_by_user_id": "four@mci.edu",
+            "is_active": true,
+            "category": "Labor",
+            "description": "Zur Digitalisierung von Objekten.",
+            "image_url": "https://cdn.myshoptet.com/usr/www.materialpro3d.cz/user/shop/big/145754_revopoint-mini-2-3d-scanner-premium-package-mini2-advanced-edition-30237-3.png?6650b6dc"
+        },
+        "12": {
+            "device_name": "Pipettierroboter",
+            "device_id": 12,
+            "managed_by_user_id": "two@mci.edu",
+            "is_active": true,
+            "category": "Labor",
+            "description": "Für Laborarbeiten in der Biologie oder Chemie.",
+            "image_url": "https://www.integra-biosciences.com/sites/default/files/2018-01/assist-plus-pipetting-robot-serial-dilution.jpg"
+        },
+        "13": {
+            "device_name": "Lötstationen",
+            "device_id": 13,
+            "managed_by_user_id": "one@mci.edu",
+            "is_active": true,
+            "category": "Labor",
+            "description": "Für Elektronikprojekte.",
+            "image_url": "https://www.pollin.de/media/dc/7b/34/1701796676/840054-1-loetstation-zd-931.jpg"
+        },
+        "14": {
+            "device_name": "Robotik-Arbeitsplätze",
+            "device_id": 14,
+            "managed_by_user_id": "four@mci.edu",
+            "is_active": true,
+            "category": "Technische Einrichtungen",
+            "description": "Mit Roboterarmen oder mobilen Robotern.\n",
+            "image_url": "https://lupadata.com/wp-content/uploads/2022/09/Robot_arm_1.jpg"
+        },
+        "15": {
+            "device_name": "Windkanäle",
+            "device_id": 15,
+            "managed_by_user_id": "one@mci.edu",
+            "is_active": true,
+            "category": "Technische Einrichtungen",
+            "description": "Für aerodynamische Untersuchungen.",
+            "image_url": "https://wttech.cz/app/uploads/2023/09/12026_V01_03@2x.png"
+        }
+    },
+    "devices_with_subclass": {
+        "1": {
+            "device_name": "Laser-Cutter",
+            "device_id": 1,
+            "managed_by_user_id": "one@mci.edu",
+            "is_active": true,
+            "category": "Werkstatt",
+            "description": "Für präzise Schnitte in Holz, Kunststoff oder Metall.",
+            "image_url": "https://www.gettingsmart.com/wp-content/uploads/2016/10/Laser-Cutting-Technology-Feature-Image.jpg",
+            "reservation": {
+                "name": "res1",
+                "start_date": "{TinyDateTime}:2021-01-01T00:00:00",
+                "end_date": "{TinyDateTime}:2021-01-02T00:00:00"
+            }
+        }
+    },
+    "user": {
+        "1": {
+            "username": "Max Mustermann",
+            "email": "one@mci.at",
+            "id": 1,
+            "role": "Nutzer",
+            "password": "mci"
+        },
+        "2": {
+            "username": "d",
+            "id": 2,
+            "email": "d",
+            "role": "Nutzer",
+            "password": "d"
+        },
+        "3": {
+            "username": "Jan Naidr",
+            "id": 3,
+            "email": "two@mci.edu",
+            "role": "Nutzer",
+            "password": "AHoj"
+        }
+    },
+    "user_with_subclass": {
+        "1": {
+            "username": "Max Mustermann",
+            "email": "one@mci.at",
+            "id": 1,
+            "role": "Nutzer",
+            "password": "mci"
+        }
+    },
+    "reservations": {
+        "1": {
+            "device_id": "Laser-Cutter",
+            "name": "",
+            "start_date": "29.01.2025",
+            "end_date": "31.01.2025"
+        },
+        "2": {
+            "device_id": "Plotter",
+            "name": "",
+            "start_date": "12.02.2025",
+            "end_date": "19.02.2025"
+        },
+        "3": {
+            "device_id": "Laser-Cutter",
+            "start_date": "06.02.2025",
+            "end_date": "08.02.2025"
+        }
+    },
+    "maintenance": {
+        "2": {
+            "device_id": "3D-Drucker",
+            "next_maintenance_date": "29.04.2025"
+        },
+        "5": {
+            "device_id": "Plotter",
+            "next_maintenance_date": "29.04.2025"
+        },
+        "6": {
+            "device_id": "Textilpressen",
+            "next_maintenance_date": "29.04.2025"
+        },
+        "7": {
+            "device_id": "Bohrmaschinen",
+            "next_maintenance_date": "29.04.2025"
+        },
+        "8": {
+            "device_id": "Mikroskope",
+            "next_maintenance_date": "29.04.2025"
+        },
+        "9": {
+            "device_id": "Spektrometer",
+            "next_maintenance_date": "29.04.2025"
+        },
+        "10": {
+            "device_id": "Oszilloskope",
+            "next_maintenance_date": "29.04.2025"
+        },
+        "11": {
+            "device_id": "3D-Scanner",
+            "next_maintenance_date": "29.04.2025"
+        },
+        "12": {
+            "device_id": "Pipettierroboter",
+            "next_maintenance_date": "29.04.2025"
+        },
+        "13": {
+            "device_id": "Lötstationen",
+            "next_maintenance_date": "29.04.2025"
+        },
+        "14": {
+            "device_id": "Robotik-Arbeitsplätze",
+            "next_maintenance_date": "29.04.2025"
+        },
+        "15": {
+            "device_id": "Windkanäle",
+            "next_maintenance_date": "29.04.2025"
+        },
+        "16": {
+            "device_id": "Laser-Cutter",
+            "quarter": "Q1",
+            "year": 2025,
+            "cost": 400.0,
+            "next_maintenance_date": "03.04.2025"
+        },
+        "20": {
+            "device_id": "Schweißgeräte",
+            "quarter": "Q1",
+            "year": 2025,
+            "cost": 300.0,
+            "next_maintenance_date": "30.04.2025"
+        },
+        "21": {
+            "device_id": "CNC-Fräsmaschinen",
+            "next_maintenance_date": "30.04.2025"
+        },
+        "22": {
+            "device_id": "Laser-Cutter",
+            "quarter": "Q2",
+            "year": 2025,
+            "cost": 3.0
+        }
+    }
+}
